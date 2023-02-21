@@ -43,6 +43,11 @@ body{
     width: 100%;
 }
 
+.ogcard {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
 
 .card-title {
     text-align: center;
@@ -50,7 +55,6 @@ body{
 .card:hover {
     color: #008000;
 }
-
 
 /* social media icons styling */
 .social-icons {
