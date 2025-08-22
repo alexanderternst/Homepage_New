@@ -1,21 +1,29 @@
 'use strict';
 
-// add class navbarDark on navbar scroll
-const header = document.querySelector('.navbar');
-window.onscroll = function() {
-    const top = window.scrollY;
-    if(top >= 100) {
-        header.classList.add('navbarDark');
+document.addEventListener('DOMContentLoaded', () => {
+    // Collapse navbar after click on small devices
+    const menu = document.getElementById('navbarSupportedContent');
+    if (menu) {
+        document.querySelectorAll('.nav-link').forEach((link) => {
+            link.addEventListener('click', () => {
+                if (typeof bootstrap !== 'undefined') {
+                    bootstrap.Collapse.getOrCreateInstance(menu).hide();
+                }
+            });
+        });
     }
-    else {
-        header.classList.remove('navbarDark');
+
+    // Dynamic age (birthday: 28 Sept 2004)
+    const ageEl = document.getElementById('age');
+    if (ageEl) {
+        const birth = new Date(2004, 8, 28); // months are 0-based (8 = Sept)
+        const setAge = () => {
+            const now = new Date();
+            let age = now.getFullYear() - birth.getFullYear();
+            const m = now.getMonth() - birth.getMonth();
+            if (m < 0 || (m === 0 && now.getDate() < birth.getDate())) age--;
+            ageEl.textContent = String(age);
+        };
+        setAge();
     }
-}
-
-//collapse navbar after click on small devices
-const navLinks = document.querySelectorAll('.nav-item');
-const menuToggle = document.getElementById('navbarSupportedContent');
-
-navLinks.forEach((l) => {
-    l.addEventListener('click', () => { new bootstrap.Collapse(menuToggle).toggle() });
 });

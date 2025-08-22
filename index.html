@@ -11,13 +11,18 @@
         integrity="sha512-fw7f+TcMjTb7bpbLJZlP8g2Y4XcCyFZW8uy8HsRZsH/SwbMw0plKHFHr99DN3l04VsYNwvzicUX/6qurvIxbxw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/4292f88e3a.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Persönliche Webseite von Alexander Ernst.">
+    <meta name="author" content="Alexander Ernst">
+    <meta name="color-scheme" content="light only">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top" role="navigation"
+        aria-label="Hauptnavigation">
         <div class="container">
-            <a class="navbar-brand" href="#">Alexander Ernst</a>
+            <a class="navbar-brand fw-semibold" href="#home">Alexander Ernst</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -25,257 +30,206 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Über mich</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Qualifikationen &amp; Erfahrung</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
                 </ul>
-
             </div>
         </div>
     </nav>
 
-    <!-- main banner -->
-    <section class="bgimage" id="home">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                    <h2 class="hero_title">Hallo, ich bin Alexander Ernst</h2>
-                    <p class="hero_desc">In Ausbildung als Applikationsentwickler EFZ</p>
+    <!-- Intro -->
+    <header id="home" class="intro d-flex align-items-center">
+        <div class="container py-5">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-md-3 text-center">
+                    <img src="images/alexander.jpg" class="avatar" alt="Porträt von Alexander Ernst" loading="eager"
+                        decoding="async" fetchpriority="high">
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- about section-->
-    <section id="about">
-        <div class="container mt-4 pt-4">
-            <h1 class="text-center">About Me</h1>
-            <div class="row mt-4">
-                <div class="col-lg-4">
-                    <img src="images/alexander.jpg" class="imageAboutPage" alt="">
-                </div>
-
-                <div class="col-lg-8">
-                    <h2>Informationen</h2>
-                    <p>
-                        Hallo, mein Name ist Alexander, ich bin 19 Jahre alt und interessiere mich für Technologie und
-                        Informatik. <br>
-                        Meine Hobbys sind Fahrradfahren, Schwimmen, Programmieren und Fotografie. <br>
-
-                        Ich bin momentan in einer 4-jährigen Ausbildung als Informatiker in EFZ, diese besteht aus einer
-                        2-jährigen theoretischen Ausbildung an der IBZ, welche ich bereits abgeschlossen habe. <br>
-                        Die letzten zwei Jahre der Ausbildung finden in Form eines zweijährigen Praktikums an der duagon
-                        AG
-                        statt. <br> <br>
-                    </p>
-
-                    <!-- Auf dieser Webseite finden Sie meinen Lebenslauf und mein Portfolio mit diversen Projekten in C#
-                    (ASP.NET), PowerShell, SQL, usw. -->
-
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <ul>
-                                <li>Name: Alexander Ernst</li>
-                                <li>Age: 19</li>
-                                <li>Occupation: Ausbildung als Applikationsentwickler EFZ</li>
-                            </ul>
-                        </div>
+                <div class="col-12 col-md-9 text-center text-md-start">
+                    <h1 class="display-5 mb-2">Hallo, ich bin Alexander Ernst</h1>
+                    <p class="lead text-secondary mb-3">Softwareentwickler bei duagon AG</p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-md-start">
+                        <a class="btn btn-dark" href="#contact">Kontakt</a>
+                        <a class="btn btn-outline-dark" href="https://github.com/alexanderternst" target="_blank"
+                            rel="noopener">GitHub</a>
+                        <a class="btn btn-outline-dark" href="https://www.linkedin.com/in/alexanderternst/"
+                            target="_blank" rel="noopener">LinkedIn</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </header>
 
-    <!-- portfolio section-->
-    <!-- <section id="portfolio">
-        <div class="container mt-3">
-            <h1 class="text-center">Portfolio</h1>
-            <div class="row">
-                <div class="ogcard col-lg-4 mt-4">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="images/SaveUp.png" alt=".NET MAUI Applikation"
-                            style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">.NET MAUI Applikation</h4>
-                            <p class="card-text">.NET MAUI (Cross-Plattform) SaveUp Applikation mit entsprechendem Web
-                                API auf Azure. </p>
-                            <div class="text-center">
-                                <a href="https://github.com/alexanderternst/SaveUp" target="_blank"
-                                    class="btn btn-success">Link</a>
+    <main>
+        <!-- About section -->
+        <section id="about">
+            <div class="container">
+                <h2 class="text-center mb-4">Über mich</h2>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10">
+                        <p class="fs-5">
+                            Ich interessiere mich für Technologie und Informatik – besonders für Web- und
+                            Backend-Entwicklung. Nach dem Abschluss meiner Ausbildung als Informatiker EFZ arbeite ich
+                            nun
+                            als Softwareentwickler bei der duagon AG.
+                        </p>
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><span class="fw-semibold">Name:</span> Alexander Ernst</li>
+                                    <li><span class="fw-semibold">Alter:</span> <span id="age">20</span></li>
+                                    <li><span class="fw-semibold">Rolle:</span> Softwareentwickler (duagon AG)</li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><span class="fw-semibold">Firmenstandort:</span> Dietikon, Schweiz</li>
+                                    <li><span class="fw-semibold">Wohnort:</span> Zürich, Schweiz</li>
+                                    <li><span class="fw-semibold">Hobbys:</span> Fahrradfahren, Schwimmen,
+                                        Programmieren, Fotografie</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="ogcard col-lg-4 mt-4">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="images/web-api-nosql.png" alt="NoSQL Web API" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">C# NoSQL Web API</h4>
-                            <p class="card-text">Ein Web API für eine imaginäre Skiservice-Firma (Jetstream Service).
-                            </p>
-                            <div class="text-center">
-                                <a href="https://github.com/alexanderternst/JetstreamSkiserviceAPI-MongoDB"
-                                    target="_blank" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ogcard col-lg-4 mt-4">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="images/wpfapp.png" alt="WPF Applikation" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">WPF Applikation</h4>
-                            <p class="card-text">Eine WPF Applikation welche Daten des Jetstream Skiservice API abrufen,
-                                erstellen, löschen und modifizieren kann.</p>
-                            <div class="text-center">
-                                <a href="https://github.com/alexanderternst/JetstreamServiceNETWPF" target="_blank"
-                                    class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
             </div>
-            <br>
-            <div class="row">
-                <div class="ogcard col-lg-4 mt-4">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="images/webapi.png" alt="SQL Web API" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">C# MSSQL Web API</h4>
-                            <p class="card-text">Ein Web API für eine imaginäre Skiservice-Firma (Jetstream Service).
-                            </p>
-                            <div class="text-center">
-                                <a href="https://github.com/alexanderternst/JetstreamSkiserviceAPI" target="_blank"
-                                    class="btn btn-success">Link</a>
+        </section>
+
+        <!-- Qualifikationen & Erfahrung -->
+        <section id="experience">
+            <div class="container">
+                <h2 class="text-center mb-4">Qualifikationen &amp; Erfahrung</h2>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-12 col-lg-5">
+                        <h3>Qualifikationen</h3>
+                        <div class="skills-panel mt-2">
+                            <div class="progress-skill mb-3">
+                                <div class="d-flex justify-content-between small"><span>ASP.NET Core</span><span
+                                        class="percent">85%</span></div>
+                                <div class="progress" role="progressbar" aria-label="ASP.NET Core" aria-valuenow="85"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar aspnet" style="width:85%"></div>
+                                </div>
+                            </div>
+                            <div class="progress-skill mb-3">
+                                <div class="d-flex justify-content-between small"><span>C# / .NET</span><span
+                                        class="percent">85%</span></div>
+                                <div class="progress" role="progressbar" aria-label="C# / .NET" aria-valuenow="85"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar dotnet" style="width:85%"></div>
+                                </div>
+                            </div>
+                            <div class="progress-skill mb-3">
+                                <div class="d-flex justify-content-between small"><span>Git / GitHub</span><span
+                                        class="percent">80%</span></div>
+                                <div class="progress" role="progressbar" aria-label="Git / GitHub" aria-valuenow="80"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar git" style="width:80%"></div>
+                                </div>
+                            </div>
+                            <div class="progress-skill mb-3">
+                                <div class="d-flex justify-content-between small"><span>SQL</span><span
+                                        class="percent">70%</span></div>
+                                <div class="progress" role="progressbar" aria-label="SQL" aria-valuenow="70"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar sql" style="width:70%"></div>
+                                </div>
+                            </div>
+                            <div class="progress-skill mb-3">
+                                <div class="d-flex justify-content-between small"><span>HTML / CSS /
+                                        Bootstrap</span><span class="percent">70%</span></div>
+                                <div class="progress" role="progressbar" aria-label="Frontend" aria-valuenow="70"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar frontend" style="width:70%"></div>
+                                </div>
+                            </div>
+                            <div class="progress-skill mb-0">
+                                <div class="d-flex justify-content-between small"><span>React</span><span
+                                        class="percent">55%</span></div>
+                                <div class="progress" role="progressbar" aria-label="React" aria-valuenow="55"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar react" style="width:55%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-7">
+                        <h3>Erfahrung</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div>
+                                    <div class="fw-semibold">Softwareentwickler – duagon AG</div>
+                                    <div class="text-secondary small">Aktuell · Dietikon, Schweiz</div>
+                                    <p class="mb-0 text-secondary">Entwicklung mit Fokus auf Web- und Backend.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div>
+                                    <div class="fw-semibold">Informatiker EFZ – Abschluss</div>
+                                    <div class="text-secondary small">Abgeschlossen · Note: 5.6</div>
+                                    <p class="mb-0 text-secondary">Ausbildung mit Schwerpunkt Applikationsentwicklung.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="ogcard col-lg-4 mt-4">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="images/chatbot.png" alt="Chatbot" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">C#/WPF Chatbot</h4>
-                            <p class="card-text">Ein Chatbot, welcher auf Eingabe eines Schlüsselwortes (z.B. Hallo, Hi,
-                                usw.) eine bestimmte Antwort zurückgibt. </p>
-                            <div class="text-center">
-                                <a href="https://github.com/alexanderternst/ChatbotCsharp" target="_blank"
-                                    class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ogcard col-lg-4 mt-4">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="images/powershell.png" alt="PowerShell SIT" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">PowerShell SIT</h4>
-                            <p class="card-text">Ein System Information Tool in PowerShell erstellt, mit dem wir
-                                verschiedene Informationen über einen PC abrufen und in verschiedenen Formaten ausgeben
-                                können. </p>
-                            <div class="text-center">
-                                <a href="https://github.com/alexanderternst/ProjektarbeitSAR" target="_blank"
-                                    class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
             </div>
+        </section>
 
-            <div class="row">
-                <div class="ogcard col-lg-4 mt-4">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="images/Lager_Datenbank_ERM.png" alt="MSSQL Datenbank ERM"
-                            style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">MSSQL Projekte</h4>
-                            <p class="card-text">Eine variation von SQL Skript Dateien, C# Projekten und ERM Diagramme
-                                die meine Fähigkeiten in SQL darstellen. </p>
-                            <div class="text-center">
-                                <a href="https://github.com/alexanderternst/SQL#readme" target="_blank"
-                                    class="btn btn-success">Link</a>
+        <!-- Portfolio section -->
+        <!-- <section id="portfolio">
+            <div class="container">
+                <h2 class="text-center mb-4">Portfolio</h2>
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="card h-100 shadow-sm portfolio-card">
+                            <img class="card-img-top project-img" alt="Projektbild"
+                                src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='675'%3E%3Crect fill='%23e9ecef' width='100%25' height='100%25'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%236c757d' font-size='48' font-family='system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial'%3EProjektbild%3C/text%3E%3C/svg%3E">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Projektname</h5>
+                                <p class="card-text text-secondary">Kurze Beschreibung des Projekts. Ersetze diesen Text
+                                    durch eine Zusammenfassung.</p>
+                                <div class="mt-auto d-flex gap-2">
+                                    <a class="btn btn-outline-dark" href="#" aria-disabled="true">Mehr erfahren</a>
+                                    <a class="btn btn-dark" href="#" aria-disabled="true">Zum Projekt</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="ogcard col-lg-4 mt-4">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="images/skiserver.png" alt="Bootstrap Webseite"
-                            style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Bootstrap Webseite</h4>
-                            <p class="card-text">Diese Webseite wurde mit HTML, JavaScript (Server-Verbindung) und dem
-                                Bootstrap-Framework kreiert. </p>
-                            <div class="text-center">
-                                <a href="https://github.com/alexanderternst/M294-WebseiteBootstrap" target="_blank"
-                                    class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ogcard col-lg-4 mt-4">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="images/webseitehtmlcss.png" alt="Webseite HTML/CSS"
-                            style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">HTML/CSS Webseite</h4>
-                            <p class="card-text">Diese Webseite wurde mit HTML und CSS erstellt, und beinhaltet meine
-                                Fotografie. </p>
-                            <div class="text-center">
-                                <a href="https://github.com/alexanderternst/M293-WebseiteCSS" target="_blank"
-                                    class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
             </div>
-    </section> -->
+        </section> -->
+    </main>
 
-    <!-- contact section-->
+
+    <!-- Contact section -->
     <section id="contact">
-        <div class="container mt-3 contactContent">
-            <h1 class="text-center">Contact Me</h1>
-
-            <div class="row mt-4">
-                <div class="col-lg-3"></div>
-                <div class="col-lg-6">
-                    <!-- form fields -->
-
-                    <p>Name: Alexander Ernst <br>
-                        Email: alexander.ernst04@gmail.com</p>
+        <div class="container">
+            <h2 class="text-center mb-4">Kontakt</h2>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <div class="p-4 border rounded-3 bg-light">
+                        <p class="mb-2">Sie erreichen mich am besten per E‑Mail:</p>
+                        <p class="mb-0"><a class="link-dark fw-semibold"
+                                href="mailto:alexander.ernst04@gmail.com">alexander.ernst04@gmail.com</a></p>
+                    </div>
                 </div>
-                <div class="col-lg-3"></div>
-
             </div>
         </div>
     </section>
 
-    <!-- footer section-->
-    <footer id="footer">
-        <div class="container-fluid">
-            <!-- social media icons -->
-            <div class="social-icons mt-4">
-                <a href="https://www.linkedin.com/in/alexanderternst/" title="LinkedIn" target="_blank"><i
-                        class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.github.com/alexanderternst" title="GitHub" target="_blank"><i
+    <!-- Footer -->
+    <footer id="footer" class="mt-5 py-4">
+        <div class="container text-center">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/alexanderternst/" title="LinkedIn" target="_blank"
+                    rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.github.com/alexanderternst" title="GitHub" target="_blank" rel="noopener"><i
                         class="fa-brands fa-github"></i></a>
             </div>
         </div>
