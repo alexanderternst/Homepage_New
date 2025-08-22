@@ -1,15 +1,12 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Collapse navbar after click on small devices
-    const menu = document.getElementById('navbarSupportedContent');
-    if (menu) {
-        document.querySelectorAll('.nav-link').forEach((link) => {
-            link.addEventListener('click', () => {
-                if (typeof bootstrap !== 'undefined') {
-                    bootstrap.Collapse.getOrCreateInstance(menu).hide();
-                }
-            });
-        });
-    }
+  const menu = document.getElementById('navbarSupportedContent');
+  if (!menu || typeof bootstrap === 'undefined') return;
+
+  menu.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () =>
+      bootstrap.Collapse.getOrCreateInstance(menu).hide()
+    );
+  });
 });
