@@ -1,21 +1,16 @@
 'use strict';
 
-// add class navbarDark on navbar scroll
-const header = document.querySelector('.navbar');
-window.onscroll = function() {
-    const top = window.scrollY;
-    if(top >= 100) {
-        header.classList.add('navbarDark');
-    }
-    else {
-        header.classList.remove('navbarDark');
-    }
-}
-
-//collapse navbar after click on small devices
-const navLinks = document.querySelectorAll('.nav-item');
-const menuToggle = document.getElementById('navbarSupportedContent');
-
-navLinks.forEach((l) => {
-    l.addEventListener('click', () => { new bootstrap.Collapse(menuToggle).toggle() });
+document.addEventListener('DOMContentLoaded', () => {
+  const menu = document.getElementById('navbarSupportedContent');
+  if (!menu) return;
+  if (typeof bootstrap === 'undefined') {
+    console.warn('Bootstrap is not loaded. Navigation collapse functionality will not work.');
+    return;
+  }
+  
+  menu.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () =>
+      bootstrap.Collapse.getOrCreateInstance(menu).hide()
+    );
+  });
 });
