@@ -105,6 +105,11 @@ button:focus-visible {
 }
 
 .portfolio-card .btn {
+    /* fallback */
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    /* modern override */
     padding-inline: 1rem;
 }
 
