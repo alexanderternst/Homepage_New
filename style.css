@@ -110,7 +110,7 @@ button:focus-visible {
     padding-right: 1rem;
 }
 
-/* modern override with feature query */
+/* modern override using CSS logical properties (padding-inline) with feature query */
 @supports (padding-inline: 1rem) {
     .portfolio-card .btn {
         padding-inline: 1rem;
