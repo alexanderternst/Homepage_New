@@ -105,7 +105,7 @@ button:focus-visible {
 }
 
 .portfolio-card .btn {
-    /* fallback */
+    /* fallback for browsers that don't support padding-inline */
     padding-left: 1rem;
     padding-right: 1rem;
 }
