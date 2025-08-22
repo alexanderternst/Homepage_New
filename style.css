@@ -108,8 +108,6 @@ button:focus-visible {
     /* fallback */
     padding-left: 1rem;
     padding-right: 1rem;
-
-    /* modern override */
 }
 
 /* modern override with feature query */
