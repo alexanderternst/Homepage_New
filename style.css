@@ -148,36 +148,36 @@ button:focus-visible {
     border-radius: .5rem;
 }
 
+/* ASP.NET Blue */
 .progress-bar.aspnet {
     background: #0ea5e9;
 }
 
-/* Sky */
+/* Dotnet Purple */
 .progress-bar.dotnet {
     background: #6d28d9;
 }
 
-/* Purple */
+/* Git Red */
 .progress-bar.git {
     background: #ef4444;
 }
 
-/* Red */
+/* SQL Green */
 .progress-bar.sql {
     background: #10b981;
 }
 
-/* Green */
+/* Frontend Amber */
 .progress-bar.frontend {
     background: #f59e0b;
 }
 
-/* Amber */
+/* React Blue */
 .progress-bar.react {
     background: #38bdf8;
 }
 
-/* Light Sky */
 .timeline {
     position: relative;
     margin-left: .75rem;
